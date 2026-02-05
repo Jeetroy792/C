@@ -455,6 +455,8 @@ async def txt_handler(bot: Client, m: Message):
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))  # Extract filename & extension
     path = f"./downloads/{m.chat.id}"
+    if not os.path.exists(path):
+        os.makedirs(path, exist_ok=True)
     
     # Initialize counters
     pdf_count = 0

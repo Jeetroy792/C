@@ -190,11 +190,11 @@ photozip = 'https://i.ibb.co/v6Vr7HCt/1000003297.png'
 
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/ITsGOLU_OWNER_BOT")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/BramhacharyaCommunity")]])
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/ITsGOLU_OWNER_BOT")        ],
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/BramhacharyaCommunity")        ],
     ]
 )
 
@@ -274,8 +274,6 @@ async def text_to_txt(client, message: Message):
     os.remove(txt_file)
 
 # Define paths for uploaded file and processed file
-UPLOAD_FOLDER = '/path/to/upload/folder'
-EDITED_FILE_PATH = '/path/to/save/edited_output.txt'
 
 @bot.on_message(filters.command("getcookies") & filters.private)
 async def getcookies_handler(client: Client, m: Message):
@@ -1166,8 +1164,7 @@ async def details_callback(client, callback_query: CallbackQuery):
     details_text = (
         "**📋 Bot Details 📋**\n\n"
         "• 🤖 Bot Name: DRM Wizard 🦋\n"
-        "• 👨‍💻 Developer: IT'sGOLU.™®\n"
-        "• 📱 Contact: @ITsGOLU_OWNER_BOT\n"
+        "• 👨‍💻 Developer: 🎉.™®\n"
         "• 🔄 Version: 1.0\n"
         "• 📝 Language: Python\n"
         "• 🛠️ Framework: Pyrogram\n\n"
@@ -1209,11 +1206,10 @@ async def back_to_start_callback(client, callback_query: CallbackQuery):
         ),
         reply_markup=InlineKeyboardMarkup([
             [
-                InlineKeyboardButton("𝐈𝐓'𝐬𝐆𝐎𝐋𝐔.™®", url="https://t.me/ITsGOLU_OWNER_BOT")
+                InlineKeyboardButton("🎉.™®", url="https://t.me/BramhacharyaCommunity")
             ],
             [
                 InlineKeyboardButton("ғᴇᴀᴛᴜʀᴇꜱ 🪔", callback_data="features"),
-                InlineKeyboardButton("ᴅᴇᴛᴀɪʟꜱ 🦋", callback_data="details")
             ]
         ])
     )

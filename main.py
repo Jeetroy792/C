@@ -274,6 +274,9 @@ async def text_to_txt(client, message: Message):
     os.remove(txt_file)
 
 # Define paths for uploaded file and processed file
+UPLOAD_FOLDER = os.path.join(os.getcwd(), "downloads")
+if not os.path.exists(UPLOAD_FOLDER):
+    os.makedirs(UPLOAD_FOLDER)
 
 @bot.on_message(filters.command("getcookies") & filters.private)
 async def getcookies_handler(client: Client, m: Message):
